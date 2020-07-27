@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>DropDown and Select</title>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   Months
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+		    <button class="dropdown-item" type="button" id="month_1" onclick="select_month(1)">1 Month</button>
+		    <button class="dropdown-item" type="button" id="month_3" onclick="select_month(3)">3 Month</button>
+		    <button class="dropdown-item" type="button" id="month_6" onclick="select_month(6)">6 Month</button>
+		    <button class="dropdown-item" type="button" id="month_12" onclick="select_month(12)">12 Month</button>
+		  </div>
+		</div>
+
+		<h1>Month - Speed - Amount Table</h1>
+	      <table class="table table-hover table-light" id="table_1">
+	      <thead class="thead-dark">
+	        <tr>
+	          <th scope="col">#</th>
+	          <th scope="col">Months</th>
+	          <th scope="col">Speed</th>
+	          <th scope="col">Price</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <th scope="row">1</th>
+	          <td class="month_col">1 Month</td>
+	          <td>2 Mbps</td>
+	          <td id="cost_0">500</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">2</th>
+	          <td class="month_col">1 Month</td>
+	          <td>3 Mbps</td>
+	          <td id="cost_1">700</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">3</th>
+	          <td class="month_col">1 Month</td>
+	          <td>5 Mbps</td>
+	          <td id="cost_2">900</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">4</th>
+	          <td class="month_col">1 Month</td>
+	          <td>10 Mbps</td>
+	          <td id="cost_3">1500</td>
+	        </tr>
+	      </tbody>
+	    </table>
+
+	    <!-- <table class="table table-hover table-light" id="table_3">
+	      <thead class="thead-dark">
+	        <tr>
+	          <th scope="col">#</th>
+	          <th scope="col">Months</th>
+	          <th scope="col">Speed</th>
+	          <th scope="col">Price</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <th scope="row">1</th>
+	          <td>3 Month</td>
+	          <td>2 Mbps</td>
+	          <td>1500</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">2</th>
+	          <td>3 Month</td>
+	          <td>3 Mbps</td>
+	          <td>2100</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">3</th>
+	          <td>3 Month</td>
+	          <td>5 Mbps</td>
+	          <td>2700</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">4</th>
+	          <td>3 Month</td>
+	          <td>10 Mbps</td>
+	          <td>4500</td>
+	        </tr>
+	      </tbody>
+	    </table>
+
+	    <table class="table table-hover table-light" id="table_6">
+	      <thead class="thead-dark">
+	        <tr>
+	          <th scope="col">#</th>
+	          <th scope="col">Months</th>
+	          <th scope="col">Speed</th>
+	          <th scope="col">Price</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <th scope="row">1</th>
+	          <td>6 Month</td>
+	          <td>2 Mbps</td>
+	          <td>3000</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">2</th>
+	          <td>6 Month</td>
+	          <td>3 Mbps</td>
+	          <td>4200</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">3</th>
+	          <td>6 Month</td>
+	          <td>5 Mbps</td>
+	          <td>5400</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">4</th>
+	          <td>6 Month</td>
+	          <td>10 Mbps</td>
+	          <td>9000</td>
+	        </tr>
+	      </tbody>
+	    </table>
+
+	    <table class="table table-hover table-light" id="table_12">
+	      <thead class="thead-dark">
+	        <tr>
+	          <th scope="col">#</th>
+	          <th scope="col">Months</th>
+	          <th scope="col">Speed</th>
+	          <th scope="col">Price</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <th scope="row">1</th>
+	          <td>12 Month</td>
+	          <td>2 Mbps</td>
+	          <td>6000</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">2</th>
+	          <td>12 Month</td>
+	          <td>3 Mbps</td>
+	          <td>8400</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">3</th>
+	          <td>12 Month</td>
+	          <td>5 Mbps</td>
+	          <td>10800</td>
+	        </tr>
+	        <tr>
+	          <th scope="row">4</th>
+	          <td>12 Month</td>
+	          <td>10 Mbps</td>
+	          <td>17000</td>
+	        </tr>
+	      </tbody>
+	    </table> -->
+  	</div>
+
+  	<script>
+  		function select_month(month)
+  		{
+  			var amount = [500,700,900,1500];
+  			console.log(month);
+  			var table = document.getElementsByClassName("month_col");
+  			var i=0;
+  			while(i<table.length)
+  			{
+  				table[i].innerHTML = month + " Months";
+  				// console.log(table[i].innerHTML)
+  				document.getElementById("cost_"+i).innerHTML = amount[i]*month;
+  				i+=1;
+  			}
+  		}
+
+  	</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

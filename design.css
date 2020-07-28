@@ -1,0 +1,33 @@
+html,body {
+  height:100%;
+}
+
+.first {
+  height:80vh;
+  width: 100%;
+  min-height:400px;
+  background-size:cover;
+  background-image:url('https://bootstrapmade.com/demo/themes/Siimple/assets/img/hero-bg.jpg');
+}
+
+#first .first-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.section-bg {
+  background-color: #fff7f2;
+}

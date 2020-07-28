@@ -144,7 +144,7 @@
   				</div>
   				<div class="col-lg-8">
   					<!-- https://docs.google.com/forms/d/e/1FAIpQLScqpsbpRp1yoJGPyMGRd3oJvZkcQB4WbAy-zyyc2PqbWrNrEA/viewform?usp=pp_url&entry.1196990261=name&entry.1199647236=email&entry.561940395=subject&entry.1355555658=message -->
-  					<form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScqpsbpRp1yoJGPyMGRd3oJvZkcQB4WbAy-zyyc2PqbWrNrEA/formResponse?" target="submit_iframe" onsubmit="submit()">
+  					<form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScqpsbpRp1yoJGPyMGRd3oJvZkcQB4WbAy-zyyc2PqbWrNrEA/formResponse?" target="submit_iframe" onsubmit="submit_func()">
   						<div class="form-row">
   							<div class="col-lg-6 form-group">
   								<input type="text" name="entry.1196990261" class="form-control" id="entry.1196990261" placeholder="Your Name" required/>
@@ -165,9 +165,9 @@
 
   					<iframe name="submit_iframe" style="display:none;"></iframe>
   					<script type="text/javascript">
-  						function submit(){
+  						function submit_func(){
   							alert("Submitted!");
-  							console.log("sadas");
+  							// console.log("sadas");
   							location.reload();
   						}
   					</script>
